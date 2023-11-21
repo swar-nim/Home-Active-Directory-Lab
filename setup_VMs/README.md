@@ -1,4 +1,4 @@
-# Setup VMs using VMWare Workstation
+# Setup VMs using VMWare Workstation Pro
 
 1. Installed Windows Server 2019 Core (Base Template) as a VM which will be promoted to DC later on.
 

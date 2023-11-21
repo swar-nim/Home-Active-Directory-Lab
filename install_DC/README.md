@@ -7,9 +7,19 @@
  - Change the preferred DNS server address to tha same IP address (or the loopback address)
 
 2. Install the AD-DS using powershell
+
 ... 
-   shell
    
 Install-WindowsFeature AD-Domain-Services -IncludeManagementTools   
    
 ...
+
+3. Promote the server to DC 
+...
+
+- Import-Module ADDSDeployment
+- Install-ADDSForest
+
+...
+
+

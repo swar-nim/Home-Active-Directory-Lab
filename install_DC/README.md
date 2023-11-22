@@ -22,4 +22,15 @@ Install-WindowsFeature AD-Domain-Services -IncludeManagementTools
 
 ...
 
+#Once the DC installation is completed, the DNS server address will need to be reset to the machine's current static ipv4 aaddress
+
+4. Changing the DNSServerAddress using Powershell
+
+- GetNetIPAddress #This will display the current working interface index 
+
+- Get-DnsClientServerAddress #This displays the interface index of the dns server
+
+- Set-DnsClientServerAddress -InterfaceIndex [ ] -ServerAddresses [ ]
+
+#The above command will change the current DNS Server Address to the specified address (replace [] with whatever the current interface index and the required DNS Server's IP Address is)
 
